@@ -6,5 +6,4 @@ namespace Domain.Interface.Service;
 public interface IBooksService
 {
     Task<ResponseGenerico<IEnumerable<BooksDTO>>> GetAllBooks();
-    Task<ResponseGenerico<string>> ApplyBooks();
 }

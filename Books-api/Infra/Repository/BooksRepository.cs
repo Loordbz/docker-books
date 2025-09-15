@@ -23,7 +23,33 @@ public class BooksRepository : IBooksRepository
         return result.Any() ? result.ToList() : null;
     }
 
-    public async Task ApplyBooks()
+    public async Task EnsureBooksTableExists()
+    {
+        var checkTableQuery = @"
+        SELECT COUNT(*) 
+        FROM information_schema.tables 
+        WHERE table_schema = DATABASE() AND table_name = 'books';";
+
+        var tableExists = await _dbContext.Connection.ExecuteScalarAsync<int>(checkTableQuery);
+
+        if (tableExists == 0)
+        {
+            var createTableQuery = @"
+            CREATE TABLE books (
+                id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(255) NOT NULL,
+                price VARCHAR(20) NOT NULL,
+                description TEXT,
+                cover VARCHAR(255)
+            );";
+
+            await _dbContext.Connection.ExecuteAsync(createTableQuery);
+            await ApplyBooks();
+        }
+
+    }
+
+    private async Task ApplyBooks()
     {
         var listBooks = new List<BooksDTO>()
         {
@@ -85,33 +111,6 @@ public class BooksRepository : IBooksRepository
 
             await _dbContext.Connection.QuerySingleOrDefaultAsync<BooksDTO>(query, parametros);
         }
-
-    }
-
-    public async Task EnsureBooksTableExists()
-    {
-        var checkTableQuery = @"
-        SELECT COUNT(*) 
-        FROM information_schema.tables 
-        WHERE table_schema = DATABASE() AND table_name = 'books';";
-
-        var tableExists = await _dbContext.Connection.ExecuteScalarAsync<int>(checkTableQuery);
-
-        if (tableExists == 0)
-        {
-            var createTableQuery = @"
-            CREATE TABLE books (
-                id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                name VARCHAR(255) NOT NULL,
-                price VARCHAR(20) NOT NULL,
-                description TEXT,
-                cover VARCHAR(255)
-            );";
-
-            await _dbContext.Connection.ExecuteAsync(createTableQuery);
-        }
-
-        await ApplyBooks();
     }
 
     public void Dispose()

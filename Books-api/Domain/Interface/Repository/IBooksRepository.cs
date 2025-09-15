@@ -6,5 +6,4 @@ namespace Domain.Interface.Service;
 public interface IBooksRepository
 {
     Task<IEnumerable<BooksDTO?>?> GetAllBooks();
-    Task ApplyBooks();
 }

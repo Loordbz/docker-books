@@ -3,7 +3,6 @@ using Domain.Interface.Service;
 using Domain.Models;
 using Domain.Models.DTO;
 
-
 namespace Service.Service;
 
 public class BooksService : IBooksService
@@ -24,18 +23,5 @@ public class BooksService : IBooksService
             return new ResponseGenerico<IEnumerable<BooksDTO>> { Retorno = Enumerable.Empty<BooksDTO>() };
 
         return new ResponseGenerico<IEnumerable<BooksDTO>> { Retorno = result! };
-    }
-
-
-    public async Task<ResponseGenerico<string>> ApplyBooks()
-    {
-        try
-        {
-            await _service.ApplyBooks();
-            return new ResponseGenerico<string> { Retorno = "Dados foram salvos" };
-        } catch
-        {
-            return new ResponseGenerico<string> { Retorno = "Dados não foram salvos" };
-        }
     }
 }
