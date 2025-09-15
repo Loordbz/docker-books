@@ -92,7 +92,7 @@ public class BooksRepository : IBooksRepository
             {
                 Name = "Métricas Ágeis",
                 Price = "R$39,90",
-                Description = "Obtenha melhores resultados em sua equipe",
+                Description = "Obtenha melhores resultados",
                 Cover = "metricas-ageis.jpg"
             }
         };
