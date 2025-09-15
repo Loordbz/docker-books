@@ -1,0 +1,56 @@
+services: 
+  nginx:
+    build:
+      dockerfile: ./docker/nginx.dockerfile
+      context: .
+    image: books/nginx
+    container_name: books
+    ports:
+      - "80:80"
+    networks: 
+      - books-network
+    depends_on:
+      - api1
+      - api2
+
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: books
+    ports:
+      - "3306:3306"
+    networks:
+      - books-network
+      
+  api1:
+    build:
+      context: ./Books-api
+      dockerfile: dockerfile
+    image: books-api
+    container_name: app-1
+    ports:
+      - "7071:5000"
+    networks: 
+      - books-network
+    depends_on:
+      - "mysql"
+
+  api2:
+    build:
+      context: ./Books-api
+      dockerfile: dockerfile
+    image: books-api
+    container_name: app-2
+    ports:
+      - "7072:5000"
+    networks: 
+      - books-network
+    depends_on:
+      - "mysql"
+
+networks:
+  books-network:
+    driver: bridge
