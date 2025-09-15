@@ -1,16 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('books-container');
 
-  fetch('/api/books')
-    .then(res => {
-      if (!res.ok) {
-        throw new Error('API respondeu com erro');
-      }
-      return res.json();
-    })
-    .then(books => {
-      books.forEach(book => {
-        const bookHTML = `
+  fetch('/api/books').then(res => {
+    if (!res.ok) {
+      throw new Error('API respondeu com erro');
+    }
+    return res.json();
+  }).then(books => {
+    books.forEach(book => {
+      const bookHTML = `
           <div class="col-md-3 col-sm-6 hero-feature text-center">
             <div class="thumbnail">
               <img src="img/${book.cover}" alt="${book.name}">
@@ -26,11 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           </div>
         `;
-        container.innerHTML += bookHTML;
-      });
-    })
-    .catch(err => {
-      console.error('Erro ao carregar os livros:', err);
-      container.innerHTML = '<p>Erro ao carregar os livros.</p>';
+      container.innerHTML += bookHTML;
     });
+  }).catch(err => {
+    console.error('Erro ao carregar os livros:', err);
+    container.innerHTML = '<p>Erro ao carregar os livros.</p>';
+  });
 });
