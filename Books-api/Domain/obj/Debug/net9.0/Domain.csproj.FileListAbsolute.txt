@@ -1,0 +1,13 @@
+E:\projetos\docker-books\Books-api\Domain\bin\Debug\net9.0\Domain.deps.json
+E:\projetos\docker-books\Books-api\Domain\bin\Debug\net9.0\Domain.dll
+E:\projetos\docker-books\Books-api\Domain\bin\Debug\net9.0\Domain.pdb
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\Domain.csproj.AssemblyReference.cache
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\Domain.sourcelink.json
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\Domain.dll
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\refint\Domain.dll
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\Domain.pdb
+E:\projetos\docker-books\Books-api\Domain\obj\Debug\net9.0\ref\Domain.dll

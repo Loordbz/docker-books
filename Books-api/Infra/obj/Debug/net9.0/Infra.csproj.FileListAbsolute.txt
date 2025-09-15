@@ -1,0 +1,16 @@
+E:\projetos\docker-books\Books-api\Infra\bin\Debug\net9.0\Infra.deps.json
+E:\projetos\docker-books\Books-api\Infra\bin\Debug\net9.0\Infra.dll
+E:\projetos\docker-books\Books-api\Infra\bin\Debug\net9.0\Infra.pdb
+E:\projetos\docker-books\Books-api\Infra\bin\Debug\net9.0\Domain.dll
+E:\projetos\docker-books\Books-api\Infra\bin\Debug\net9.0\Domain.pdb
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.csproj.AssemblyReference.cache
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.AssemblyInfoInputs.cache
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.AssemblyInfo.cs
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.csproj.CoreCompileInputs.cache
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.sourcelink.json
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.csproj.Up2Date
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.dll
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\refint\Infra.dll
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\Infra.pdb
+E:\projetos\docker-books\Books-api\Infra\obj\Debug\net9.0\ref\Infra.dll

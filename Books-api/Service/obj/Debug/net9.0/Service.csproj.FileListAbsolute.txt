@@ -1,0 +1,16 @@
+E:\projetos\docker-books\Books-api\Service\bin\Debug\net9.0\Service.deps.json
+E:\projetos\docker-books\Books-api\Service\bin\Debug\net9.0\Service.dll
+E:\projetos\docker-books\Books-api\Service\bin\Debug\net9.0\Service.pdb
+E:\projetos\docker-books\Books-api\Service\bin\Debug\net9.0\Domain.dll
+E:\projetos\docker-books\Books-api\Service\bin\Debug\net9.0\Domain.pdb
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.csproj.AssemblyReference.cache
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.AssemblyInfoInputs.cache
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.AssemblyInfo.cs
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.csproj.CoreCompileInputs.cache
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.sourcelink.json
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.csproj.Up2Date
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.dll
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\refint\Service.dll
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\Service.pdb
+E:\projetos\docker-books\Books-api\Service\obj\Debug\net9.0\ref\Service.dll
