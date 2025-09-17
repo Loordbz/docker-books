@@ -33,7 +33,6 @@ Este projeto é uma aplicação simples de uma loja de livros composta por:
 ### Pré-requisitos
 
 - Docker instalado
-- Docker Compose instalado
 
 ### Passos para rodar
 
